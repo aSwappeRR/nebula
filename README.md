@@ -10,7 +10,7 @@ Run after installing Blueprint and it should be running.
 
 **Usage:**
 
-``wget -O install.sh https://raw.githubusercontent.com/aSwappeRR/main/nebula.sh && bash nebula.sh
+``wget -O install.sh https://raw.githubusercontent.com/aSwappeRR/main/nebula.sh && bash nebula.sh```
 ```
 
 ---
