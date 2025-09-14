@@ -1,38 +1,33 @@
-# dlpve - quick proxmox install script
+# nebula - quick Nebula install script
 
-This is basically Proxmox’s docs, but wrapped in an install script designed for quick deployment. You want something fast? Like uhhhhhh? iPXE but for Proxmox? This is it.
+This is basically Nebula’s docs, but wrapped in an install script designed for quick deployment. You want something fast? Like uhhhhhh? nebula but without sftp? This is it.
 
-The script sets hostname, picks the fastest mirror, nukes cloud-init and Debian kernels, sets up a NAT bridge, installs Proxmox VE, DHCP server, and configures port forwarding for easy web UI access.
+The script sets all setup with single command.!
 
-Run it on a fresh Debian install and get your Proxmox VE up and running.
+Run after installing Blueprint and it should be running.
 
 ---
 
 **Usage:**
 
-```bash
-wget -O install.sh https://raw.githubusercontent.com/PowerEdgeR710/dlpve/refs/heads/main/install.sh && bash install.sh
+``wget -O install.sh https://raw.githubusercontent.com/aSwappeRR/main/nebula.sh && bash nebula.sh
 ```
 
 ---
 
 **Features:**
 
-* Auto-detects main ethernet interface and IP
-* Sets hostname and updates `/etc/hosts`
-* Picks fastest Proxmox repo mirror
-* Removes conflicting packages (cloud-init, Debian kernels)
-* Configures NAT bridge (vmbr0) with IP forwarding
-* Installs Proxmox VE and DHCP server
-* Sets up systemd service to forward port 443 to 8006 (Proxmox web UI)
+* Auto-install theme
+* Picks fastest Nebula mirro
+* Time saver
+---
+
+Access your Nebula Theme at:
+
+* `https://<running-domain>`
+* or `http://<detected-ip>:80`
 
 ---
 
-Access your new Proxmox web UI at:
-
-* `https://<detected-ip>:8006`
-* or `https://<detected-ip>:443`
-
----
-
-Made by https://discord.gg/compute owner
+Made By Root@Night
+discord - deadlydreamzs
